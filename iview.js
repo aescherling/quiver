@@ -293,6 +293,26 @@ function explore(data) {
 	n = data.length;
 	p = Object.keys(data[0]).length;
 
+	// if the number of columns of data is less than ncol, change ncol
+	if (p < ncol) {
+		ncol = p;
+		// recalculate column ids
+		tableColIDs = [];
+		for (var i = 0; i < ncol; i++) {
+		    tableColIDs.push(i);
+		}
+	}
+
+	// same idea for rows
+	if (n < nrow) {
+		nrow = n;
+		// recalculate row ids
+		tableRowIDs = [];
+		for (var i = 0; i < nrow; i++) {
+		    tableRowIDs.push(i);
+		}
+	}
+
 	// get a list of the variable names
 	varNames = Object.keys(data[0]);
 
