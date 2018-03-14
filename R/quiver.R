@@ -80,7 +80,7 @@ uhist <- function(X, view=TRUE, save=FALSE, file=NULL) {
 	html <- HTML(glue(uhist.html, .open="```", .close="'''"))
 
 	# if `view' is true, open in browser
-	if (view) print(html, browse=TRUE, viewer=utils::browseURL)
+	if (view) print(html, browse=TRUE)
 
 	# if `save' is true, save the file
 	if (save) {
@@ -160,7 +160,7 @@ mplot <- function(X, view=TRUE, save=FALSE, file=NULL) {
 	html <- HTML(glue(mplot.html, .open="```", .close="'''"))
 
 	# if `view' is true, open in browser
-	if (view) print(html, browse=TRUE, viewer=utils::browseURL)
+	if (view) print(html, browse=TRUE)
 
 	# if `save' is true, save the file
 	if (save) {
@@ -229,7 +229,7 @@ iview <- function(X, view=TRUE, save=FALSE, file=NULL) {
 	html <- HTML(glue(iview.html, .open="```", .close="'''"))
 
 	# if `view' is true, open in browser
-	if (view) print(html, browse=TRUE, viewer=utils::browseURL)
+	if (view) print(html, browse=TRUE)
 
 	# if `save' is true, save the file
 	if (save) {
