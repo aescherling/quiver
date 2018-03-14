@@ -1,6 +1,6 @@
 # quiver
 
-Quick interactive visualizations in R. Basic interactive plots in R, powered by D3, viewed in the browser.
+Quick interactive visualizations in R. Powered by D3, viewed in the browser.
 
 This package currently includes three functions:
 
