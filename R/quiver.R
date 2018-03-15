@@ -35,6 +35,9 @@ iview.html <- glue(iview_template)
 #' @examples uhist(iris)
 #' @examples uhist(iris, save=TRUE, file="iris.html")
 #' @export uhist
+#' @import htmltools
+#' @import jsonlite
+#' @import glue
 
 uhist <- function(X, view=TRUE, save=FALSE, file=NULL) {
 
@@ -119,6 +122,9 @@ uhist <- function(X, view=TRUE, save=FALSE, file=NULL) {
 #' @examples mplot(iris)
 #' @examples mplot(iris, save=TRUE, file="iris.html")
 #' @export mplot
+#' @import htmltools
+#' @import jsonlite
+#' @import glue
 
 mplot <- function(X, view=TRUE, save=FALSE, file=NULL) {
 
@@ -200,6 +206,9 @@ mplot <- function(X, view=TRUE, save=FALSE, file=NULL) {
 #' @examples iview(iris)
 #' @examples iview(iris, save=TRUE, file="iris.html")
 #' @export iview
+#' @import htmltools
+#' @import jsonlite
+#' @import glue
 
 iview <- function(X, view=TRUE, save=FALSE, file=NULL) {
 

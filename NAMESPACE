@@ -3,3 +3,6 @@
 export(iview)
 export(mplot)
 export(uhist)
+import(glue)
+import(htmltools)
+import(jsonlite)
