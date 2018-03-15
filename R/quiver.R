@@ -2,7 +2,7 @@
 # interactive visualizations in R
 
 # library for combining text files 
-library(glue)
+# library(glue)
 
 # load templates
 uhist_template <- readChar('inst/uhist_template.html', file.info('inst/uhist_template.html')$size)
@@ -39,9 +39,9 @@ iview.html <- glue(iview_template)
 uhist <- function(X, view=TRUE, save=FALSE, file=NULL) {
 
 	# required packages
-	require(htmltools)
-	require(jsonlite)
-	require(glue)
+	# require(htmltools)
+	# require(jsonlite)
+	# require(glue)
 
 	# keep the function call as the title
 	title <- paste0('uhist(',deparse(substitute(X)),')')
@@ -123,9 +123,9 @@ uhist <- function(X, view=TRUE, save=FALSE, file=NULL) {
 mplot <- function(X, view=TRUE, save=FALSE, file=NULL) {
 
 	# required packages
-	require(htmltools)
-	require(jsonlite)
-	require(glue)
+	# require(htmltools)
+	# require(jsonlite)
+	# require(glue)
 
 	# keep the function call as the title
 	title <- paste0('mplot(',deparse(substitute(X)),')')
@@ -204,9 +204,9 @@ mplot <- function(X, view=TRUE, save=FALSE, file=NULL) {
 iview <- function(X, view=TRUE, save=FALSE, file=NULL) {
 
 	# required packages
-	require(htmltools)
-	require(jsonlite)
-	require(glue)
+	# require(htmltools)
+	# require(jsonlite)
+	# require(glue)
 
 	# keep the function call as the title
 	title <- paste0('iview(',deparse(substitute(X)),')')
