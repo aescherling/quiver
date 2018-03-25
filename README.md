@@ -10,7 +10,7 @@ This package currently includes three functions:
 
 All of these functions can be called on a matrix or data frame, e.g. `uhist(X)` for data frame `X`.
 
-Install from GitHub from within R using the devtools package:
+Install from within R using the devtools package:
 
 ```
 install.packages("devtools")
